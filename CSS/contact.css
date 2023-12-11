@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    height: 150px; /* Adjusted height to fit content */
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px; /* Added padding for better spacing */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+ul {
+    list-style: none;
+    padding: 10px 0; /* Added padding for better spacing */
+    text-align: center; /* Center the list items on small screens */
+    background-color: rgb(160, 89, 3);
+    margin: 0;
+    border-bottom: 4px solid yellow; /* Add a yellow underline */
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    display: block; /* Change to block for mobile layout */
+    height: auto;
+    width: auto;
+    padding: 10px; /* Increase padding for better touch interaction */
+    background-color: rgb(160, 89, 3);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    margin-bottom: 20px; /* Add some margin to avoid overlap */
+}
+
+.left-section {
+    background-color: rgb(214, 142, 103);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Your existing styles... */
+
+.left-section {
+    text-align: center; /* Center the content horizontally */
+}
+
+.left-section iframe {
+    width: 100%; /* Make the iframe responsive */
+    max-width: 400px; /* Set the maximum width of the iframe */
+    height: 300px; /* Set the height of the iframe */
+    margin: 0 auto; /* Center the iframe horizontally */
+    display: block; /* Ensure block display for proper margin auto */
+    padding-top: 15px;
+}
+
+/* Your existing styles... */
+
+
+
+h2 {
+    color: orange;
+}
+
+.right-section {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    background-color: rgb(160, 89, 3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Your existing styles... */
+
+.right-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section label,
+.right-section input,
+.right-section select,
+.right-section textarea,
+.right-section button {
+    margin-bottom: 10px;
+}
+
+/* Optional: Adjust styling based on your design preferences */
+.right-section label {
+    font-weight: bold;
+}
+
+.right-section input,
+.right-section select,
+.right-section textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.right-section button {
+    background-color: rgb(160, 89, 3);
+    color: white;
+    width: 150px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer;
+
+    /* Positioning properties */
+    
+    top: 20px; /* Set the distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(0%); /* Adjust for centering */
+}
+
+/* Responsive Styles */
+
+/* Media query for medium screens */
+@media only screen and (min-width: 769px) {
+    ul {
+        text-align: left; /* Align the ul to the left on larger screens */
+    }
+
+    li {
+        display: inline-block;
+        width: auto;
+        margin-right: 10px;
+        margin-bottom: 0; /* Remove bottom margin for inline items */
+    }
+
+    .main-container {
+        flex-direction: row; /* Revert to side-by-side layout on medium screens */
+    }
+
+    .left-section {
+        width: 25%;
+    }
+
+    .right-section {
+        width: 75%;
+    }
+}
+
